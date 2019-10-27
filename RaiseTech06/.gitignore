@@ -34,3 +34,5 @@ out/
 ### 追記 ###
 bin/
 .gradle
+application.yml
+generatorConfig.xml

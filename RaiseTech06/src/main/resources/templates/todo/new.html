@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Todo-new</title>
+<link rel="stylesheet" href="/css/bootstrap.css" />
+<script src="/js/bootstrap.js"></script>
+</head>
+<body>
+<div class="container">
+	<h1>新規投稿</h1>
+	<form th:action="@{/todo}" th:method="post">
+		<div>
+			<label class="control-label">Title</label>
+			<input class="form-control" type="text" name="todoTitle"></input>
+		</div>
+		<button class="btn btn-dark" type="submit">投稿</button>
+	</form>
+	<div>
+		<a class="btn btn-link" href="/todo">一覧画面へ</a>
+	</div>
+</div>
+</body>
+</html>
